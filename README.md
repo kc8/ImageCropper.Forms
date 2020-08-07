@@ -1,3 +1,5 @@
+Updating for more recent Android versions.
+
 # ImageCropper.Forms
 
 Xamarin.Forms plugin to crop and rotate photos.
