@@ -57,7 +57,7 @@ namespace Stormlion.ImageCropper
                 {
                     if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
                     {
-                        await page.DisplayAlert("No Camera", ":( No camera available.", "OK");
+                        await page.DisplayAlert("No Camera", "No camera available.", "OK");
                         Faiure?.Invoke();
                         return;
                     }
