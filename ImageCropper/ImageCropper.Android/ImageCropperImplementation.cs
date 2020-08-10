@@ -11,7 +11,8 @@ namespace Stormlion.ImageCropper.Droid
         {
             try
             {
-                CropImage.ActivityBuilder activityBuilder = CropImage.Builder(Android.Net.Uri.FromFile(new Java.IO.File(imageFile)));
+                   //Changed from CropImage.Builder() to CropImage.Activity which seems to now return the builder 
+                CropImage.ActivityBuilder activityBuilder = CropImage.Activity(Android.Net.Uri.FromFile(new Java.IO.File(imageFile)));
 
                 if(imageCropper.CropShape == ImageCropper.CropShapeType.Oval)
                 {

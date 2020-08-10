@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Android", "Test\Test.Android\Test.Android.csproj", "{21888A92-3966-474B-BFD8-04E6DC7A260F}"
 EndProject
@@ -27,7 +27,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{38AB27E5-B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5509A28A-CD73-4B7D-B5DD-A312CCE9FB48}"
 	ProjectSection(SolutionItems) = preProject
-		ImageCropper.nuspec = ImageCropper.nuspec
+		ImageCropperAndroid.Forms.nuspec = ImageCropperAndroid.Forms.nuspec
 		LICENSE.md = LICENSE.md
 		README.md = README.md
 	EndProjectSection

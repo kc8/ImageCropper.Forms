@@ -1,4 +1,9 @@
-Updating for more recent Android versions.
+A fork from ![https://github.com/stormlion227/ImageCropper.Forms](stormlion227). Forked with the intent of making the ImageCropper work with Android 28+. 
+Refer to Stormlion's Reop and Nuget package for future updates. 
+
+This package includes iOS10. If there are build issues with iOS 10 please refer to the original repo or submit a PR/issue. 
+
+Changes include: updating to Xamarian.Android.28.0.03 and changing package management to a reference style
 
 # ImageCropper.Forms
 
