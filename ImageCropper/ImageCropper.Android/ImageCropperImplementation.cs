@@ -1,6 +1,8 @@
 ﻿using Com.Theartofdev.Edmodo.Cropper;
 using Plugin.CurrentActivity;
+using Stormlion.ImageCropper.Droid;
 using System.Diagnostics;
+using Xamarin.Forms;
 using System;
 
 namespace Stormlion.ImageCropper.Droid
@@ -11,10 +13,9 @@ namespace Stormlion.ImageCropper.Droid
         {
             try
             {
-                   //Changed from CropImage.Builder() to CropImage.Activity which seems to now return the builder 
                 CropImage.ActivityBuilder activityBuilder = CropImage.Activity(Android.Net.Uri.FromFile(new Java.IO.File(imageFile)));
 
-                if(imageCropper.CropShape == ImageCropper.CropShapeType.Oval)
+                if (imageCropper.CropShape == ImageCropper.CropShapeType.Oval)
                 {
                     activityBuilder.SetCropShape(CropImageView.CropShape.Oval);
                 }
@@ -23,7 +24,7 @@ namespace Stormlion.ImageCropper.Droid
                     activityBuilder.SetCropShape(CropImageView.CropShape.Rectangle);
                 }
 
-                if(imageCropper.AspectRatioX > 0 && imageCropper.AspectRatioY > 0)
+                if (imageCropper.AspectRatioX > 0 && imageCropper.AspectRatioY > 0)
                 {
                     activityBuilder.SetFixAspectRatio(true);
                     activityBuilder.SetAspectRatio(imageCropper.AspectRatioX, imageCropper.AspectRatioY);
@@ -33,20 +34,19 @@ namespace Stormlion.ImageCropper.Droid
                     activityBuilder.SetFixAspectRatio(false);
                 }
 
-                if(!string.IsNullOrWhiteSpace(imageCropper.PageTitle))
+                if (!string.IsNullOrWhiteSpace(imageCropper.PageTitle))
                 {
                     activityBuilder.SetActivityTitle(imageCropper.PageTitle);
                 }
 
                 activityBuilder.Start(CrossCurrentActivity.Current.Activity);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Debug.WriteLine(ex.ToString());
             }
-            
-        }
 
+        }
         public byte[] GetBytes(string imageFile)
         {
             var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);

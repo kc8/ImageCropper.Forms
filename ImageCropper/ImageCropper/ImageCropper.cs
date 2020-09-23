@@ -34,7 +34,7 @@ namespace Stormlion.ImageCropper
 
         public string TakePhotoTitle { get; set; } = "Take Photo";
 
-        public string PhotoLibraryTitle { get; set; } = "Photo Library";
+        public string PhotoLibraryTitle { get; set; } = "Pick from Photo Library";
 
         public string CancelButtonTitle { get; set; } = "Cancel";
         public PhotoSize ImageSize { get; set; } = PhotoSize.Full;
@@ -44,12 +44,12 @@ namespace Stormlion.ImageCropper
 
         public Action Faiure { get; set; }
 
-        public async void Show(Page page, string imageFile = null)
+        public async Task Show(Page page, string imageFile = null)
         {
-            MediaFile file = null;
+            MediaFile file = null; //not doing this
             if (imageFile == null)
             {
-                await CrossMedia.Current.Initialize();
+                await CrossMedia.Current.Initialize(); 
 
                 string action = await page.DisplayActionSheet(SelectSourceTitle, CancelButtonTitle, null,
                     TakePhotoTitle, PhotoLibraryTitle);
@@ -97,10 +97,11 @@ namespace Stormlion.ImageCropper
 
             // small delay
             await Task.Delay(TimeSpan.FromMilliseconds(100));
-            DependencyService.Get<IImageCropperWrapper>().ShowFromFile(this, imageFile);
+            DependencyService.Get<IImageCropperWrapper>().ShowFromFile(this, imageFile); 
 
             // dispose media file
-            file?.Dispose();
+          //  if (file != null) file?.Dispose(); 
+            //file?.Dispose(); //Object Reference not set to an instance of an object 
         }
 
         public byte[] GetBytes(string imageFile)
