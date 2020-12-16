@@ -1,4 +1,4 @@
-A fork from ![https://github.com/stormlion227/ImageCropper.Forms](stormlion227). Forked with the intent of making the ImageCropper work with Android 28+. 
+A fork from [stormlion227](https://github.com/stormlion227/ImageCropper.orms). Forked with the intent of making the ImageCropper work with Android 28+. 
 Refer to Stormlion's Reop and Nuget package for future updates. 
 
 This package includes iOS10. If there are build issues with iOS 10 please refer to the original repo or submit a PR/issue. 
@@ -32,7 +32,7 @@ Supports Android and iOS.
 
 ## Setup
 
-* Install the [nuget package](https://www.nuget.org/packages/ShapeControl.Forms/) in portable and all platform specific projects.
+* Install the [nuget package]() in portable and all platform specific projects.
 * This plugin uses the [MediaPlugin](https://github.com/jamesmontemagno/MediaPlugin/blob/master/README.md). Be sure to complete the full setup this plugin. Please fully read through the [MediaPlugin description](https://github.com/jamesmontemagno/MediaPlugin/blob/master/README.md).
 
 ### Android
@@ -69,7 +69,7 @@ In AppDelegate.cs file:
 
 ### Show ImageCropper page.
 ```cs
-    new ImageCropper()
+    await new ImageCropper()
     {
         Success = (imageFile) =>
         {
@@ -82,7 +82,7 @@ In AppDelegate.cs file:
 ```
 ### Show it with additional parameters.
 ```cs
-    new ImageCropper()
+    await new ImageCropper()
     {
         PageTitle = "Test Title",
         AspectRatioX = 1,
@@ -103,7 +103,7 @@ In AppDelegate.cs file:
 ```
 ### Show it with a image
 ```cs
-    new ImageCropper()
+    await new ImageCropper()
     {
         Success = (imageFile) =>
         {
