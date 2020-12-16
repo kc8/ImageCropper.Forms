@@ -44,7 +44,7 @@ namespace Stormlion.ImageCropper.iOS
 
             cropViewController.OnDidFinishCancelled = (cancelled) =>
             {
-                imageCropper.Faiure?.Invoke();
+                imageCropper.Failure?.Invoke();
                 UIApplication.SharedApplication.KeyWindow.RootViewController.DismissViewController(true, null);
             };
 
@@ -80,7 +80,7 @@ namespace Stormlion.ImageCropper.iOS
             else
             {
                 Debug.WriteLine("NOT saved as " + jpgFilename + " because" + err.LocalizedDescription);
-                imageCropper.Faiure?.Invoke();
+                imageCropper.Failure?.Invoke();
             }
             UIApplication.SharedApplication.KeyWindow.RootViewController.DismissViewController(true, null);
         }

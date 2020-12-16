@@ -42,7 +42,7 @@ namespace Stormlion.ImageCropper
 
         public Action<string> Success { get; set; }
 
-        public Action Faiure { get; set; }
+        public Action Failure { get; set;}
 
         public async Task Show(Page page, string imageFile = null)
         {
@@ -57,8 +57,7 @@ namespace Stormlion.ImageCropper
                 {
                     if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
                     {
-                        await page.DisplayAlert("No Camera", "No camera available.", "OK");
-                        Faiure?.Invoke();
+                        Failure?.Invoke();
                         return;
                     }
 
@@ -72,23 +71,28 @@ namespace Stormlion.ImageCropper
                 {
                     if (!CrossMedia.Current.IsPickPhotoSupported)
                     {
-                        await page.DisplayAlert("Error", "This device is not supported to pick photo.", "OK");
-                        Faiure?.Invoke();
+                        Failure?.Invoke();
                         return;
                     }
-
-                    file = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions
-                        {SaveMetaData = true, CompressionQuality = 100});
+                    try
+                    {
+                        file = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions
+                        { SaveMetaData = true, CompressionQuality = 100 });
+                    }
+                    catch (Exception e)
+                    {
+                        System.Console.WriteLine();
+                    }
                 }
                 else
                 {
-                    Faiure?.Invoke();
+                    Failure?.Invoke();
                     return;
                 }
 
                 if (file == null)
                 {
-                    Faiure?.Invoke();
+                    Failure?.Invoke();
                     return;
                 }
 

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
+﻿using Foundation;
+using Stormlion.ImageCropper.iOS;
 using UIKit;
 
 namespace CropperDemo.iOS
@@ -22,6 +19,9 @@ namespace CropperDemo.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            Platform.Init();
+            Stormlion.ImageCropper.iOS.Platform.Init();
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

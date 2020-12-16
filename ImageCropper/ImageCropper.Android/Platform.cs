@@ -27,7 +27,7 @@ namespace Stormlion.ImageCropper.Droid
                 }
                 else if ((int)resultCode == (int)(CropImage.CropImageActivityResultErrorCode))
                 {
-                    ImageCropper.Current.Faiure?.Invoke();
+                    ImageCropper.Current.Failure?.Invoke();
                 }
             }
         }
