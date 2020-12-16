@@ -1,0 +1,9 @@
+C:\Users\Kyle_\Documents\projects\ImageCropper\ImageCropper.Forms\ImageCropper\ImageCropper\bin\Release\netstandard2.0\Stormlion.ImageCropper.deps.json
+C:\Users\Kyle_\Documents\projects\ImageCropper\ImageCropper.Forms\ImageCropper\ImageCropper\bin\Release\netstandard2.0\Stormlion.ImageCropper.dll
+C:\Users\Kyle_\Documents\projects\ImageCropper\ImageCropper.Forms\ImageCropper\ImageCropper\bin\Release\netstandard2.0\Stormlion.ImageCropper.pdb
+C:\Users\Kyle_\Documents\projects\ImageCropper\ImageCropper.Forms\ImageCropper\ImageCropper\obj\Release\netstandard2.0\ImageCropper.csprojAssemblyReference.cache
+C:\Users\Kyle_\Documents\projects\ImageCropper\ImageCropper.Forms\ImageCropper\ImageCropper\obj\Release\netstandard2.0\ImageCropper.AssemblyInfoInputs.cache
+C:\Users\Kyle_\Documents\projects\ImageCropper\ImageCropper.Forms\ImageCropper\ImageCropper\obj\Release\netstandard2.0\ImageCropper.AssemblyInfo.cs
+C:\Users\Kyle_\Documents\projects\ImageCropper\ImageCropper.Forms\ImageCropper\ImageCropper\obj\Release\netstandard2.0\ImageCropper.csproj.CoreCompileInputs.cache
+C:\Users\Kyle_\Documents\projects\ImageCropper\ImageCropper.Forms\ImageCropper\ImageCropper\obj\Release\netstandard2.0\Stormlion.ImageCropper.dll
+C:\Users\Kyle_\Documents\projects\ImageCropper\ImageCropper.Forms\ImageCropper\ImageCropper\obj\Release\netstandard2.0\Stormlion.ImageCropper.pdb

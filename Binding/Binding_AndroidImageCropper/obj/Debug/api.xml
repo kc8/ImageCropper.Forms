@@ -1,0 +1,1217 @@
+<api>
+  <package name="com.theartofdev.edmodo.cropper" jni-name="com/theartofdev/edmodo/cropper">
+    <class abstract="false" deprecated="not deprecated" extends="android.os.AsyncTask" extends-generic-aware="android.os.AsyncTask&lt;java.lang.Void, java.lang.Void, com.theartofdev.edmodo.cropper.BitmapCroppingWorkerTask.Result&gt;" jni-extends="Landroid/os/AsyncTask;" final="true" name="BitmapCroppingWorkerTask" static="false" visibility="" jni-signature="Lcom/theartofdev/edmodo/cropper/BitmapCroppingWorkerTask;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" jni-signature="([Ljava/lang/Void;)Lcom/theartofdev/edmodo/cropper/BitmapCroppingWorkerTask$Result;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.BitmapCroppingWorkerTask.Result" jni-return="Lcom/theartofdev/edmodo/cropper/BitmapCroppingWorkerTask$Result;" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="params" type="java.lang.Void..." jni-type="[Ljava/lang/Void;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getUri" jni-signature="()Landroid/net/Uri;" bridge="false" native="false" return="android.net.Uri" jni-return="Landroid/net/Uri;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="BitmapCroppingWorkerTask.Result" static="true" visibility="" jni-signature="Lcom/theartofdev/edmodo/cropper/BitmapCroppingWorkerTask$Result;">
+      <field deprecated="not deprecated" final="true" name="bitmap" jni-signature="Landroid/graphics/Bitmap;" static="false" transient="false" type="android.graphics.Bitmap" type-generic-aware="android.graphics.Bitmap" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="uri" jni-signature="Landroid/net/Uri;" static="false" transient="false" type="android.net.Uri" type-generic-aware="android.net.Uri" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.os.AsyncTask" extends-generic-aware="android.os.AsyncTask&lt;java.lang.Void, java.lang.Void, com.theartofdev.edmodo.cropper.BitmapLoadingWorkerTask.Result&gt;" jni-extends="Landroid/os/AsyncTask;" final="true" name="BitmapLoadingWorkerTask" static="false" visibility="" jni-signature="Lcom/theartofdev/edmodo/cropper/BitmapLoadingWorkerTask;">
+      <constructor deprecated="not deprecated" final="false" name="BitmapLoadingWorkerTask" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageView;Landroid/net/Uri;)V" bridge="false" static="false" type="com.theartofdev.edmodo.cropper.BitmapLoadingWorkerTask" synthetic="false" visibility="public">
+        <parameter name="cropImageView" type="com.theartofdev.edmodo.cropper.CropImageView" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView;">
+        </parameter>
+        <parameter name="uri" type="android.net.Uri" jni-type="Landroid/net/Uri;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" jni-signature="([Ljava/lang/Void;)Lcom/theartofdev/edmodo/cropper/BitmapLoadingWorkerTask$Result;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.BitmapLoadingWorkerTask.Result" jni-return="Lcom/theartofdev/edmodo/cropper/BitmapLoadingWorkerTask$Result;" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="params" type="java.lang.Void..." jni-type="[Ljava/lang/Void;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getUri" jni-signature="()Landroid/net/Uri;" bridge="false" native="false" return="android.net.Uri" jni-return="Landroid/net/Uri;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onPostExecute" jni-signature="(Lcom/theartofdev/edmodo/cropper/BitmapLoadingWorkerTask$Result;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="result" type="com.theartofdev.edmodo.cropper.BitmapLoadingWorkerTask.Result" jni-type="Lcom/theartofdev/edmodo/cropper/BitmapLoadingWorkerTask$Result;">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="BitmapLoadingWorkerTask.Result" static="true" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/BitmapLoadingWorkerTask$Result;">
+      <field deprecated="not deprecated" final="true" name="bitmap" jni-signature="Landroid/graphics/Bitmap;" static="false" transient="false" type="android.graphics.Bitmap" type-generic-aware="android.graphics.Bitmap" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="degreesRotated" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="error" jni-signature="Ljava/lang/Exception;" static="false" transient="false" type="java.lang.Exception" type-generic-aware="java.lang.Exception" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="loadSampleSize" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="uri" jni-signature="Landroid/net/Uri;" static="false" transient="false" type="android.net.Uri" type-generic-aware="android.net.Uri" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="BitmapUtils" static="false" visibility="" jni-signature="Lcom/theartofdev/edmodo/cropper/BitmapUtils;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="BitmapUtils.BitmapSampled" static="true" visibility="" jni-signature="Lcom/theartofdev/edmodo/cropper/BitmapUtils$BitmapSampled;">
+      <field deprecated="not deprecated" final="true" name="bitmap" jni-signature="Landroid/graphics/Bitmap;" static="false" transient="false" type="android.graphics.Bitmap" type-generic-aware="android.graphics.Bitmap" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="BitmapUtils.RotateBitmapResult" static="true" visibility="" jni-signature="Lcom/theartofdev/edmodo/cropper/BitmapUtils$RotateBitmapResult;">
+      <field deprecated="not deprecated" final="true" name="bitmap" jni-signature="Landroid/graphics/Bitmap;" static="false" transient="false" type="android.graphics.Bitmap" type-generic-aware="android.graphics.Bitmap" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="BuildConfig" static="false" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/BuildConfig;">
+      <constructor deprecated="not deprecated" final="false" name="BuildConfig" jni-signature="()V" bridge="false" static="false" type="com.theartofdev.edmodo.cropper.BuildConfig" synthetic="false" visibility="public">
+      </constructor>
+      <field deprecated="not deprecated" final="true" name="BUILD_TYPE" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="DEBUG" jni-signature="Z" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="LIBRARY_PACKAGE_NAME" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.theartofdev.edmodo.cropper&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="VERSION_CODE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="VERSION_NAME" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;2.8.0&quot;" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="CropImage" static="false" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImage;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="activity" jni-signature="()Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="activity" jni-signature="(Landroid/net/Uri;)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="uri" type="android.net.Uri" jni-type="Landroid/net/Uri;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getActivityResult" jni-signature="(Landroid/content/Intent;)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityResult;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityResult" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityResult;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="data" type="android.content.Intent" jni-type="Landroid/content/Intent;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCameraIntent" jni-signature="(Landroid/content/Context;Landroid/net/Uri;)Landroid/content/Intent;" bridge="false" native="false" return="android.content.Intent" jni-return="Landroid/content/Intent;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="outputFileUri" type="android.net.Uri" jni-type="Landroid/net/Uri;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCameraIntents" jni-signature="(Landroid/content/Context;Landroid/content/pm/PackageManager;)Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;android.content.Intent&gt;" jni-return="Ljava/util/List&lt;Landroid/content/Intent;&gt;;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="packageManager" type="android.content.pm.PackageManager" jni-type="Landroid/content/pm/PackageManager;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCaptureImageOutputUri" jni-signature="(Landroid/content/Context;)Landroid/net/Uri;" bridge="false" native="false" return="android.net.Uri" jni-return="Landroid/net/Uri;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getGalleryIntents" jni-signature="(Landroid/content/pm/PackageManager;Ljava/lang/String;Z)Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;android.content.Intent&gt;" jni-return="Ljava/util/List&lt;Landroid/content/Intent;&gt;;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="packageManager" type="android.content.pm.PackageManager" jni-type="Landroid/content/pm/PackageManager;">
+        </parameter>
+        <parameter name="action" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="includeDocuments" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPickImageChooserIntent" jni-signature="(Landroid/content/Context;)Landroid/content/Intent;" bridge="false" native="false" return="android.content.Intent" jni-return="Landroid/content/Intent;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPickImageChooserIntent" jni-signature="(Landroid/content/Context;Ljava/lang/CharSequence;ZZ)Landroid/content/Intent;" bridge="false" native="false" return="android.content.Intent" jni-return="Landroid/content/Intent;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="title" type="java.lang.CharSequence" jni-type="Ljava/lang/CharSequence;">
+        </parameter>
+        <parameter name="includeDocuments" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="includeCamera" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPickImageResultUri" jni-signature="(Landroid/content/Context;Landroid/content/Intent;)Landroid/net/Uri;" bridge="false" native="false" return="android.net.Uri" jni-return="Landroid/net/Uri;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="data" type="android.content.Intent" jni-type="Landroid/content/Intent;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="hasPermissionInManifest" jni-signature="(Landroid/content/Context;Ljava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="permissionName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isExplicitCameraPermissionRequired" jni-signature="(Landroid/content/Context;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isReadExternalStoragePermissionsRequired" jni-signature="(Landroid/content/Context;Landroid/net/Uri;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="uri" type="android.net.Uri" jni-type="Landroid/net/Uri;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isUriRequiresPermissions" jni-signature="(Landroid/content/Context;Landroid/net/Uri;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="uri" type="android.net.Uri" jni-type="Landroid/net/Uri;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="startPickImageActivity" jni-signature="(Landroid/app/Activity;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="activity" type="android.app.Activity" jni-type="Landroid/app/Activity;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="toOvalBitmap" jni-signature="(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;" bridge="false" native="false" return="android.graphics.Bitmap" jni-return="Landroid/graphics/Bitmap;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="bitmap" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="CAMERA_CAPTURE_PERMISSIONS_REQUEST_CODE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2011" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="CROP_IMAGE_ACTIVITY_REQUEST_CODE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="203" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="204" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="CROP_IMAGE_EXTRA_BUNDLE" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;CROP_IMAGE_EXTRA_BUNDLE&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="CROP_IMAGE_EXTRA_OPTIONS" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;CROP_IMAGE_EXTRA_OPTIONS&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="CROP_IMAGE_EXTRA_RESULT" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;CROP_IMAGE_EXTRA_RESULT&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="CROP_IMAGE_EXTRA_SOURCE" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;CROP_IMAGE_EXTRA_SOURCE&quot;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="PICK_IMAGE_CHOOSER_REQUEST_CODE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="200" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="PICK_IMAGE_PERMISSIONS_REQUEST_CODE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="201" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="CropImage.1" static="true" visibility="" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImage$1;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="CropImage.ActivityBuilder" static="true" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="getIntent" jni-signature="(Landroid/content/Context;)Landroid/content/Intent;" bridge="false" native="false" return="android.content.Intent" jni-return="Landroid/content/Intent;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getIntent" jni-signature="(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;" bridge="false" native="false" return="android.content.Intent" jni-return="Landroid/content/Intent;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="cls" type="java.lang.Class&lt;?&gt;" jni-type="Ljava/lang/Class&lt;*&gt;;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setActivityMenuIconColor" jni-signature="(I)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="activityMenuIconColor" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setActivityTitle" jni-signature="(Ljava/lang/CharSequence;)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="activityTitle" type="java.lang.CharSequence" jni-type="Ljava/lang/CharSequence;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAllowCounterRotation" jni-signature="(Z)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="allowCounterRotation" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAllowFlipping" jni-signature="(Z)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="allowFlipping" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAllowRotation" jni-signature="(Z)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="allowRotation" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAspectRatio" jni-signature="(II)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="aspectRatioX" type="int" jni-type="I">
+        </parameter>
+        <parameter name="aspectRatioY" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAutoZoomEnabled" jni-signature="(Z)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="autoZoomEnabled" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setBackgroundColor" jni-signature="(I)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="backgroundColor" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setBorderCornerColor" jni-signature="(I)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="borderCornerColor" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setBorderCornerLength" jni-signature="(F)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="borderCornerLength" type="float" jni-type="F">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setBorderCornerOffset" jni-signature="(F)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="borderCornerOffset" type="float" jni-type="F">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setBorderCornerThickness" jni-signature="(F)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="borderCornerThickness" type="float" jni-type="F">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setBorderLineColor" jni-signature="(I)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="borderLineColor" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setBorderLineThickness" jni-signature="(F)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="borderLineThickness" type="float" jni-type="F">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setCropMenuCropButtonIcon" jni-signature="(I)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="drawableResource" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setCropMenuCropButtonTitle" jni-signature="(Ljava/lang/CharSequence;)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="title" type="java.lang.CharSequence" jni-type="Ljava/lang/CharSequence;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setCropShape" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="cropShape" type="com.theartofdev.edmodo.cropper.CropImageView.CropShape" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setFixAspectRatio" jni-signature="(Z)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="fixAspectRatio" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setFlipHorizontally" jni-signature="(Z)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="flipHorizontally" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setFlipVertically" jni-signature="(Z)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="flipVertically" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setGuidelines" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="guidelines" type="com.theartofdev.edmodo.cropper.CropImageView.Guidelines" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setGuidelinesColor" jni-signature="(I)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="guidelinesColor" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setGuidelinesThickness" jni-signature="(F)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="guidelinesThickness" type="float" jni-type="F">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setInitialCropWindowPaddingRatio" jni-signature="(F)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="initialCropWindowPaddingRatio" type="float" jni-type="F">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setInitialCropWindowRectangle" jni-signature="(Landroid/graphics/Rect;)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="initialCropWindowRectangle" type="android.graphics.Rect" jni-type="Landroid/graphics/Rect;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setInitialRotation" jni-signature="(I)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="initialRotation" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMaxCropResultSize" jni-signature="(II)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="maxCropResultWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="maxCropResultHeight" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMaxZoom" jni-signature="(I)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="maxZoom" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMinCropResultSize" jni-signature="(II)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="minCropResultWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="minCropResultHeight" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMinCropWindowSize" jni-signature="(II)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="minCropWindowWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="minCropWindowHeight" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMultiTouchEnabled" jni-signature="(Z)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="multiTouchEnabled" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setNoOutputImage" jni-signature="(Z)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="noOutputImage" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOutputCompressFormat" jni-signature="(Landroid/graphics/Bitmap$CompressFormat;)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="outputCompressFormat" type="android.graphics.Bitmap.CompressFormat" jni-type="Landroid/graphics/Bitmap$CompressFormat;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOutputCompressQuality" jni-signature="(I)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="outputCompressQuality" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOutputUri" jni-signature="(Landroid/net/Uri;)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="outputUri" type="android.net.Uri" jni-type="Landroid/net/Uri;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setRequestedSize" jni-signature="(II)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="reqWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="reqHeight" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setRequestedSize" jni-signature="(IILcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="reqWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="reqHeight" type="int" jni-type="I">
+        </parameter>
+        <parameter name="options" type="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setRotationDegrees" jni-signature="(I)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="rotationDegrees" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setScaleType" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageView$ScaleType;)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="scaleType" type="com.theartofdev.edmodo.cropper.CropImageView.ScaleType" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$ScaleType;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setShowCropOverlay" jni-signature="(Z)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="showCropOverlay" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSnapRadius" jni-signature="(F)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="snapRadius" type="float" jni-type="F">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setTouchRadius" jni-signature="(F)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityBuilder" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityBuilder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="touchRadius" type="float" jni-type="F">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="start" jni-signature="(Landroid/app/Activity;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="activity" type="android.app.Activity" jni-type="Landroid/app/Activity;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="start" jni-signature="(Landroid/app/Activity;Ljava/lang/Class;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="activity" type="android.app.Activity" jni-type="Landroid/app/Activity;">
+        </parameter>
+        <parameter name="cls" type="java.lang.Class&lt;?&gt;" jni-type="Ljava/lang/Class&lt;*&gt;;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="start" jni-signature="(Landroid/content/Context;Landroid/app/Fragment;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="fragment" type="android.app.Fragment" jni-type="Landroid/app/Fragment;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="start" jni-signature="(Landroid/content/Context;Landroid/app/Fragment;Ljava/lang/Class;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="fragment" type="android.app.Fragment" jni-type="Landroid/app/Fragment;">
+        </parameter>
+        <parameter name="cls" type="java.lang.Class&lt;?&gt;" jni-type="Ljava/lang/Class&lt;*&gt;;">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.theartofdev.edmodo.cropper.CropImageView.CropResult" extends-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.CropResult" jni-extends="Lcom/theartofdev/edmodo/cropper/CropImageView$CropResult;" final="true" name="CropImage.ActivityResult" static="true" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityResult;">
+      <implements name="android.os.Parcelable" name-generic-aware="android.os.Parcelable" jni-type="Landroid/os/Parcelable;">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="CropImage.ActivityResult" jni-signature="(Landroid/net/Uri;Landroid/net/Uri;Ljava/lang/Exception;[FLandroid/graphics/Rect;ILandroid/graphics/Rect;I)V" bridge="false" static="false" type="com.theartofdev.edmodo.cropper.CropImage.ActivityResult" synthetic="false" visibility="public">
+        <parameter name="originalUri" type="android.net.Uri" jni-type="Landroid/net/Uri;">
+        </parameter>
+        <parameter name="uri" type="android.net.Uri" jni-type="Landroid/net/Uri;">
+        </parameter>
+        <parameter name="error" type="java.lang.Exception" jni-type="Ljava/lang/Exception;">
+        </parameter>
+        <parameter name="cropPoints" type="float[]" jni-type="[F">
+        </parameter>
+        <parameter name="cropRect" type="android.graphics.Rect" jni-type="Landroid/graphics/Rect;">
+        </parameter>
+        <parameter name="rotation" type="int" jni-type="I">
+        </parameter>
+        <parameter name="wholeImageRect" type="android.graphics.Rect" jni-type="Landroid/graphics/Rect;">
+        </parameter>
+        <parameter name="sampleSize" type="int" jni-type="I">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="CropImage.ActivityResult" jni-signature="(Landroid/os/Parcel;)V" bridge="false" static="false" type="com.theartofdev.edmodo.cropper.CropImage.ActivityResult" synthetic="false" visibility="protected">
+        <parameter name="in" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="describeContents" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" jni-signature="(Landroid/os/Parcel;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="dest" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+        <parameter name="flags" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="CREATOR" jni-signature="Landroid/os/Parcelable$Creator;" static="true" transient="false" type="android.os.Parcelable.Creator" type-generic-aware="android.os.Parcelable.Creator&lt;com.theartofdev.edmodo.cropper.CropImage.ActivityResult&gt;" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="CropImage.ActivityResult.1" static="true" visibility="" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityResult$1;">
+      <implements name="android.os.Parcelable.Creator" name-generic-aware="android.os.Parcelable.Creator&lt;com.theartofdev.edmodo.cropper.CropImage.ActivityResult&gt;" jni-type="Landroid/os/Parcelable$Creator&lt;Lcom/theartofdev/edmodo/cropper/CropImage$ActivityResult;&gt;;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createFromParcel" jni-signature="(Landroid/os/Parcel;)Lcom/theartofdev/edmodo/cropper/CropImage$ActivityResult;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityResult" jni-return="Lcom/theartofdev/edmodo/cropper/CropImage$ActivityResult;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="in" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newArray" jni-signature="(I)[Lcom/theartofdev/edmodo/cropper/CropImage$ActivityResult;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImage.ActivityResult[]" jni-return="[Lcom/theartofdev/edmodo/cropper/CropImage$ActivityResult;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="size" type="int" jni-type="I">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.view.animation.Animation" extends-generic-aware="android.view.animation.Animation" jni-extends="Landroid/view/animation/Animation;" final="true" name="CropImageAnimation" static="false" visibility="" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageAnimation;">
+      <implements name="android.view.animation.Animation.AnimationListener" name-generic-aware="android.view.animation.Animation.AnimationListener" jni-type="Landroid/view/animation/Animation$AnimationListener;">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="CropImageAnimation" jni-signature="(Landroid/widget/ImageView;Lcom/theartofdev/edmodo/cropper/CropOverlayView;)V" bridge="false" static="false" type="com.theartofdev.edmodo.cropper.CropImageAnimation" synthetic="false" visibility="public">
+        <parameter name="cropImageView" type="android.widget.ImageView" jni-type="Landroid/widget/ImageView;">
+        </parameter>
+        <parameter name="cropOverlayView" type="com.theartofdev.edmodo.cropper.CropOverlayView" jni-type="Lcom/theartofdev/edmodo/cropper/CropOverlayView;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onAnimationEnd" jni-signature="(Landroid/view/animation/Animation;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="animation" type="android.view.animation.Animation" jni-type="Landroid/view/animation/Animation;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onAnimationRepeat" jni-signature="(Landroid/view/animation/Animation;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="animation" type="android.view.animation.Animation" jni-type="Landroid/view/animation/Animation;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onAnimationStart" jni-signature="(Landroid/view/animation/Animation;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="animation" type="android.view.animation.Animation" jni-type="Landroid/view/animation/Animation;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setEndState" jni-signature="([FLandroid/graphics/Matrix;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="boundPoints" type="float[]" jni-type="[F">
+        </parameter>
+        <parameter name="imageMatrix" type="android.graphics.Matrix" jni-type="Landroid/graphics/Matrix;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setStartState" jni-signature="([FLandroid/graphics/Matrix;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="boundPoints" type="float[]" jni-type="[F">
+        </parameter>
+        <parameter name="imageMatrix" type="android.graphics.Matrix" jni-type="Landroid/graphics/Matrix;">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="CropImageOptions" static="false" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageOptions;">
+      <implements name="android.os.Parcelable" name-generic-aware="android.os.Parcelable" jni-type="Landroid/os/Parcelable;">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="CropImageOptions" jni-signature="()V" bridge="false" static="false" type="com.theartofdev.edmodo.cropper.CropImageOptions" synthetic="false" visibility="public">
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="CropImageOptions" jni-signature="(Landroid/os/Parcel;)V" bridge="false" static="false" type="com.theartofdev.edmodo.cropper.CropImageOptions" synthetic="false" visibility="protected">
+        <parameter name="in" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="describeContents" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="validate" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" jni-signature="(Landroid/os/Parcel;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="dest" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+        <parameter name="flags" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="CREATOR" jni-signature="Landroid/os/Parcelable$Creator;" static="true" transient="false" type="android.os.Parcelable.Creator" type-generic-aware="android.os.Parcelable.Creator&lt;com.theartofdev.edmodo.cropper.CropImageOptions&gt;" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="activityMenuIconColor" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="activityTitle" jni-signature="Ljava/lang/CharSequence;" static="false" transient="false" type="java.lang.CharSequence" type-generic-aware="java.lang.CharSequence" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="allowCounterRotation" jni-signature="Z" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="allowFlipping" jni-signature="Z" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="allowRotation" jni-signature="Z" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="aspectRatioX" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="aspectRatioY" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="autoZoomEnabled" jni-signature="Z" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="backgroundColor" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="borderCornerColor" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="borderCornerLength" jni-signature="F" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="borderCornerOffset" jni-signature="F" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="borderCornerThickness" jni-signature="F" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="borderLineColor" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="borderLineThickness" jni-signature="F" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="cropMenuCropButtonIcon" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="cropMenuCropButtonTitle" jni-signature="Ljava/lang/CharSequence;" static="false" transient="false" type="java.lang.CharSequence" type-generic-aware="java.lang.CharSequence" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="cropShape" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;" static="false" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.CropShape" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.CropShape" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="fixAspectRatio" jni-signature="Z" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="flipHorizontally" jni-signature="Z" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="flipVertically" jni-signature="Z" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="guidelines" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;" static="false" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.Guidelines" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.Guidelines" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="guidelinesColor" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="guidelinesThickness" jni-signature="F" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="initialCropWindowPaddingRatio" jni-signature="F" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="initialCropWindowRectangle" jni-signature="Landroid/graphics/Rect;" static="false" transient="false" type="android.graphics.Rect" type-generic-aware="android.graphics.Rect" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="initialRotation" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="maxCropResultHeight" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="maxCropResultWidth" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="maxZoom" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="minCropResultHeight" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="minCropResultWidth" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="minCropWindowHeight" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="minCropWindowWidth" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="multiTouchEnabled" jni-signature="Z" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="noOutputImage" jni-signature="Z" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="outputCompressFormat" jni-signature="Landroid/graphics/Bitmap$CompressFormat;" static="false" transient="false" type="android.graphics.Bitmap.CompressFormat" type-generic-aware="android.graphics.Bitmap.CompressFormat" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="outputCompressQuality" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="outputRequestHeight" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="outputRequestSizeOptions" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;" static="false" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="outputRequestWidth" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="outputUri" jni-signature="Landroid/net/Uri;" static="false" transient="false" type="android.net.Uri" type-generic-aware="android.net.Uri" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="rotationDegrees" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="scaleType" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$ScaleType;" static="false" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.ScaleType" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.ScaleType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="showCropOverlay" jni-signature="Z" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="showProgressBar" jni-signature="Z" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="snapRadius" jni-signature="F" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="touchRadius" jni-signature="F" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="CropImageOptions.1" static="true" visibility="" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageOptions$1;">
+      <implements name="android.os.Parcelable.Creator" name-generic-aware="android.os.Parcelable.Creator&lt;com.theartofdev.edmodo.cropper.CropImageOptions&gt;" jni-type="Landroid/os/Parcelable$Creator&lt;Lcom/theartofdev/edmodo/cropper/CropImageOptions;&gt;;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createFromParcel" jni-signature="(Landroid/os/Parcel;)Lcom/theartofdev/edmodo/cropper/CropImageOptions;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImageOptions" jni-return="Lcom/theartofdev/edmodo/cropper/CropImageOptions;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="in" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newArray" jni-signature="(I)[Lcom/theartofdev/edmodo/cropper/CropImageOptions;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImageOptions[]" jni-return="[Lcom/theartofdev/edmodo/cropper/CropImageOptions;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="size" type="int" jni-type="I">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.widget.FrameLayout" extends-generic-aware="android.widget.FrameLayout" jni-extends="Landroid/widget/FrameLayout;" final="false" name="CropImageView" static="false" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView;">
+      <constructor deprecated="not deprecated" final="false" name="CropImageView" jni-signature="(Landroid/content/Context;)V" bridge="false" static="false" type="com.theartofdev.edmodo.cropper.CropImageView" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="CropImageView" jni-signature="(Landroid/content/Context;Landroid/util/AttributeSet;)V" bridge="false" static="false" type="com.theartofdev.edmodo.cropper.CropImageView" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="attrs" type="android.util.AttributeSet" jni-type="Landroid/util/AttributeSet;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="clearAspectRatio" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="clearImage" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="flipImageHorizontally" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="flipImageVertically" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAspectRatio" jni-signature="()Landroid/util/Pair;" bridge="false" native="false" return="android.util.Pair&lt;java.lang.Integer, java.lang.Integer&gt;" jni-return="Landroid/util/Pair&lt;Ljava/lang/Integer;Ljava/lang/Integer;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCropPoints" jni-signature="()[F" bridge="false" native="false" return="float[]" jni-return="[F" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCropRect" jni-signature="()Landroid/graphics/Rect;" bridge="false" native="false" return="android.graphics.Rect" jni-return="Landroid/graphics/Rect;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCropShape" jni-signature="()Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImageView.CropShape" jni-return="Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCropWindowRect" jni-signature="()Landroid/graphics/RectF;" bridge="false" native="false" return="android.graphics.RectF" jni-return="Landroid/graphics/RectF;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCroppedImage" jni-signature="()Landroid/graphics/Bitmap;" bridge="false" native="false" return="android.graphics.Bitmap" jni-return="Landroid/graphics/Bitmap;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCroppedImage" jni-signature="(II)Landroid/graphics/Bitmap;" bridge="false" native="false" return="android.graphics.Bitmap" jni-return="Landroid/graphics/Bitmap;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="reqWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="reqHeight" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCroppedImage" jni-signature="(IILcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;)Landroid/graphics/Bitmap;" bridge="false" native="false" return="android.graphics.Bitmap" jni-return="Landroid/graphics/Bitmap;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="reqWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="reqHeight" type="int" jni-type="I">
+        </parameter>
+        <parameter name="options" type="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCroppedImageAsync" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCroppedImageAsync" jni-signature="(II)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="reqWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="reqHeight" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCroppedImageAsync" jni-signature="(IILcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="reqWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="reqHeight" type="int" jni-type="I">
+        </parameter>
+        <parameter name="options" type="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getGuidelines" jni-signature="()Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImageView.Guidelines" jni-return="Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getImageResource" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getImageUri" jni-signature="()Landroid/net/Uri;" bridge="false" native="false" return="android.net.Uri" jni-return="Landroid/net/Uri;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMaxZoom" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getRotatedDegrees" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getScaleType" jni-signature="()Lcom/theartofdev/edmodo/cropper/CropImageView$ScaleType;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImageView.ScaleType" jni-return="Lcom/theartofdev/edmodo/cropper/CropImageView$ScaleType;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getWholeImageRect" jni-signature="()Landroid/graphics/Rect;" bridge="false" native="false" return="android.graphics.Rect" jni-return="Landroid/graphics/Rect;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isAutoZoomEnabled" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isFixAspectRatio" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isFlippedHorizontally" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isFlippedVertically" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isSaveBitmapToInstanceState" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isShowCropOverlay" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isShowProgressBar" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onRestoreInstanceState" jni-signature="(Landroid/os/Parcelable;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="state" type="android.os.Parcelable" jni-type="Landroid/os/Parcelable;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onSaveInstanceState" jni-signature="()Landroid/os/Parcelable;" bridge="false" native="false" return="android.os.Parcelable" jni-return="Landroid/os/Parcelable;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="resetCropRect" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="rotateImage" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="degrees" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="saveCroppedImageAsync" jni-signature="(Landroid/net/Uri;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="saveUri" type="android.net.Uri" jni-type="Landroid/net/Uri;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="saveCroppedImageAsync" jni-signature="(Landroid/net/Uri;Landroid/graphics/Bitmap$CompressFormat;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="saveUri" type="android.net.Uri" jni-type="Landroid/net/Uri;">
+        </parameter>
+        <parameter name="saveCompressFormat" type="android.graphics.Bitmap.CompressFormat" jni-type="Landroid/graphics/Bitmap$CompressFormat;">
+        </parameter>
+        <parameter name="saveCompressQuality" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="saveCroppedImageAsync" jni-signature="(Landroid/net/Uri;Landroid/graphics/Bitmap$CompressFormat;III)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="saveUri" type="android.net.Uri" jni-type="Landroid/net/Uri;">
+        </parameter>
+        <parameter name="saveCompressFormat" type="android.graphics.Bitmap.CompressFormat" jni-type="Landroid/graphics/Bitmap$CompressFormat;">
+        </parameter>
+        <parameter name="saveCompressQuality" type="int" jni-type="I">
+        </parameter>
+        <parameter name="reqWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="reqHeight" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="saveCroppedImageAsync" jni-signature="(Landroid/net/Uri;Landroid/graphics/Bitmap$CompressFormat;IIILcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="saveUri" type="android.net.Uri" jni-type="Landroid/net/Uri;">
+        </parameter>
+        <parameter name="saveCompressFormat" type="android.graphics.Bitmap.CompressFormat" jni-type="Landroid/graphics/Bitmap$CompressFormat;">
+        </parameter>
+        <parameter name="saveCompressQuality" type="int" jni-type="I">
+        </parameter>
+        <parameter name="reqWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="reqHeight" type="int" jni-type="I">
+        </parameter>
+        <parameter name="options" type="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAspectRatio" jni-signature="(II)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="aspectRatioX" type="int" jni-type="I">
+        </parameter>
+        <parameter name="aspectRatioY" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAutoZoomEnabled" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="autoZoomEnabled" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setCropRect" jni-signature="(Landroid/graphics/Rect;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="rect" type="android.graphics.Rect" jni-type="Landroid/graphics/Rect;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setCropShape" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="cropShape" type="com.theartofdev.edmodo.cropper.CropImageView.CropShape" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setFixedAspectRatio" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="fixAspectRatio" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setFlippedHorizontally" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="flipHorizontally" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setFlippedVertically" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="flipVertically" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setGuidelines" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="guidelines" type="com.theartofdev.edmodo.cropper.CropImageView.Guidelines" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setImageBitmap" jni-signature="(Landroid/graphics/Bitmap;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="bitmap" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setImageResource" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="resId" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setImageUriAsync" jni-signature="(Landroid/net/Uri;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="uri" type="android.net.Uri" jni-type="Landroid/net/Uri;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMaxCropResultSize" jni-signature="(II)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="maxCropResultWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="maxCropResultHeight" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMaxZoom" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="maxZoom" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMinCropResultSize" jni-signature="(II)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="minCropResultWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="minCropResultHeight" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMultiTouchEnabled" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="multiTouchEnabled" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnCropImageCompleteListener" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageView$OnCropImageCompleteListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.theartofdev.edmodo.cropper.CropImageView.OnCropImageCompleteListener" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$OnCropImageCompleteListener;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnCropWindowChangedListener" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageView$OnSetCropWindowChangeListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.theartofdev.edmodo.cropper.CropImageView.OnSetCropWindowChangeListener" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$OnSetCropWindowChangeListener;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnSetCropOverlayMovedListener" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageView$OnSetCropOverlayMovedListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.theartofdev.edmodo.cropper.CropImageView.OnSetCropOverlayMovedListener" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$OnSetCropOverlayMovedListener;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnSetCropOverlayReleasedListener" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageView$OnSetCropOverlayReleasedListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.theartofdev.edmodo.cropper.CropImageView.OnSetCropOverlayReleasedListener" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$OnSetCropOverlayReleasedListener;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnSetImageUriCompleteListener" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageView$OnSetImageUriCompleteListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.theartofdev.edmodo.cropper.CropImageView.OnSetImageUriCompleteListener" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$OnSetImageUriCompleteListener;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setRotatedDegrees" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="degrees" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSaveBitmapToInstanceState" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="saveBitmapToInstanceState" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setScaleType" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageView$ScaleType;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="scaleType" type="com.theartofdev.edmodo.cropper.CropImageView.ScaleType" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$ScaleType;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setShowCropOverlay" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="showCropOverlay" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setShowProgressBar" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="showProgressBar" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSnapRadius" jni-signature="(F)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="snapRadius" type="float" jni-type="F">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="startCropWorkerTask" jni-signature="(IILcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;Landroid/net/Uri;Landroid/graphics/Bitmap$CompressFormat;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="reqWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="reqHeight" type="int" jni-type="I">
+        </parameter>
+        <parameter name="options" type="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;">
+        </parameter>
+        <parameter name="saveUri" type="android.net.Uri" jni-type="Landroid/net/Uri;">
+        </parameter>
+        <parameter name="saveCompressFormat" type="android.graphics.Bitmap.CompressFormat" jni-type="Landroid/graphics/Bitmap$CompressFormat;">
+        </parameter>
+        <parameter name="saveCompressQuality" type="int" jni-type="I">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="CropImageView.1" static="false" visibility="" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$1;">
+      <implements name="com.theartofdev.edmodo.cropper.CropOverlayView.CropWindowChangeListener" name-generic-aware="com.theartofdev.edmodo.cropper.CropOverlayView.CropWindowChangeListener" jni-type="Lcom/theartofdev/edmodo/cropper/CropOverlayView$CropWindowChangeListener;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onCropWindowChanged" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="inProgress" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="CropImageView.CropResult" static="true" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$CropResult;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="getBitmap" jni-signature="()Landroid/graphics/Bitmap;" bridge="false" native="false" return="android.graphics.Bitmap" jni-return="Landroid/graphics/Bitmap;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCropPoints" jni-signature="()[F" bridge="false" native="false" return="float[]" jni-return="[F" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCropRect" jni-signature="()Landroid/graphics/Rect;" bridge="false" native="false" return="android.graphics.Rect" jni-return="Landroid/graphics/Rect;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getError" jni-signature="()Ljava/lang/Exception;" bridge="false" native="false" return="java.lang.Exception" jni-return="Ljava/lang/Exception;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getOriginalBitmap" jni-signature="()Landroid/graphics/Bitmap;" bridge="false" native="false" return="android.graphics.Bitmap" jni-return="Landroid/graphics/Bitmap;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getOriginalUri" jni-signature="()Landroid/net/Uri;" bridge="false" native="false" return="android.net.Uri" jni-return="Landroid/net/Uri;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getRotation" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSampleSize" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getUri" jni-signature="()Landroid/net/Uri;" bridge="false" native="false" return="android.net.Uri" jni-return="Landroid/net/Uri;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getWholeImageRect" jni-signature="()Landroid/graphics/Rect;" bridge="false" native="false" return="android.graphics.Rect" jni-return="Landroid/graphics/Rect;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isSuccessful" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.theartofdev.edmodo.cropper.CropImageView.CropShape&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="CropImageView.CropShape" static="true" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImageView.CropShape" jni-return="Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImageView.CropShape[]" jni-return="[Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="OVAL" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.CropShape" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.CropShape" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="RECTANGLE" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.CropShape" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.CropShape" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.theartofdev.edmodo.cropper.CropImageView.Guidelines&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="CropImageView.Guidelines" static="true" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImageView.Guidelines" jni-return="Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImageView.Guidelines[]" jni-return="[Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="OFF" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.Guidelines" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.Guidelines" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="ON" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.Guidelines" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.Guidelines" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="ON_TOUCH" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.Guidelines" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.Guidelines" visibility="public" volatile="false">
+      </field>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="CropImageView.OnCropImageCompleteListener" static="true" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$OnCropImageCompleteListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onCropImageComplete" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageView;Lcom/theartofdev/edmodo/cropper/CropImageView$CropResult;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.theartofdev.edmodo.cropper.CropImageView" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView;">
+        </parameter>
+        <parameter name="p1" type="com.theartofdev.edmodo.cropper.CropImageView.CropResult" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$CropResult;">
+        </parameter>
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="CropImageView.OnSetCropOverlayMovedListener" static="true" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$OnSetCropOverlayMovedListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onCropOverlayMoved" jni-signature="(Landroid/graphics/Rect;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="android.graphics.Rect" jni-type="Landroid/graphics/Rect;">
+        </parameter>
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="CropImageView.OnSetCropOverlayReleasedListener" static="true" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$OnSetCropOverlayReleasedListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onCropOverlayReleased" jni-signature="(Landroid/graphics/Rect;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="android.graphics.Rect" jni-type="Landroid/graphics/Rect;">
+        </parameter>
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="CropImageView.OnSetCropWindowChangeListener" static="true" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$OnSetCropWindowChangeListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onCropWindowChanged" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="CropImageView.OnSetImageUriCompleteListener" static="true" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$OnSetImageUriCompleteListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onSetImageUriComplete" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageView;Landroid/net/Uri;Ljava/lang/Exception;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.theartofdev.edmodo.cropper.CropImageView" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView;">
+        </parameter>
+        <parameter name="p1" type="android.net.Uri" jni-type="Landroid/net/Uri;">
+        </parameter>
+        <parameter name="p2" type="java.lang.Exception" jni-type="Ljava/lang/Exception;">
+        </parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="CropImageView.RequestSizeOptions" static="true" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" jni-return="Lcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions[]" jni-return="[Lcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="NONE" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="RESIZE_EXACT" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="RESIZE_FIT" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="RESIZE_INSIDE" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="SAMPLING" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$RequestSizeOptions;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.RequestSizeOptions" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.theartofdev.edmodo.cropper.CropImageView.ScaleType&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="CropImageView.ScaleType" static="true" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$ScaleType;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/theartofdev/edmodo/cropper/CropImageView$ScaleType;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImageView.ScaleType" jni-return="Lcom/theartofdev/edmodo/cropper/CropImageView$ScaleType;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/theartofdev/edmodo/cropper/CropImageView$ScaleType;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImageView.ScaleType[]" jni-return="[Lcom/theartofdev/edmodo/cropper/CropImageView$ScaleType;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="CENTER" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$ScaleType;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.ScaleType" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.ScaleType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="CENTER_CROP" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$ScaleType;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.ScaleType" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.ScaleType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="CENTER_INSIDE" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$ScaleType;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.ScaleType" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.ScaleType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="FIT_CENTER" jni-signature="Lcom/theartofdev/edmodo/cropper/CropImageView$ScaleType;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropImageView.ScaleType" type-generic-aware="com.theartofdev.edmodo.cropper.CropImageView.ScaleType" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.view.View" extends-generic-aware="android.view.View" jni-extends="Landroid/view/View;" final="false" name="CropOverlayView" static="false" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropOverlayView;">
+      <constructor deprecated="not deprecated" final="false" name="CropOverlayView" jni-signature="(Landroid/content/Context;)V" bridge="false" static="false" type="com.theartofdev.edmodo.cropper.CropOverlayView" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="CropOverlayView" jni-signature="(Landroid/content/Context;Landroid/util/AttributeSet;)V" bridge="false" static="false" type="com.theartofdev.edmodo.cropper.CropOverlayView" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="attrs" type="android.util.AttributeSet" jni-type="Landroid/util/AttributeSet;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="fixCurrentCropWindowRect" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAspectRatioX" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAspectRatioY" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCropShape" jni-signature="()Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImageView.CropShape" jni-return="Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCropWindowRect" jni-signature="()Landroid/graphics/RectF;" bridge="false" native="false" return="android.graphics.RectF" jni-return="Landroid/graphics/RectF;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getGuidelines" jni-signature="()Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropImageView.Guidelines" jni-return="Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getInitialCropWindowRect" jni-signature="()Landroid/graphics/Rect;" bridge="false" native="false" return="android.graphics.Rect" jni-return="Landroid/graphics/Rect;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isFixAspectRatio" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="resetCropOverlayView" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="resetCropWindowRect" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAspectRatioX" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="aspectRatioX" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAspectRatioY" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="aspectRatioY" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setBounds" jni-signature="([FII)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="boundsPoints" type="float[]" jni-type="[F">
+        </parameter>
+        <parameter name="viewWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="viewHeight" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setCropShape" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="cropShape" type="com.theartofdev.edmodo.cropper.CropImageView.CropShape" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setCropWindowChangeListener" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropOverlayView$CropWindowChangeListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.theartofdev.edmodo.cropper.CropOverlayView.CropWindowChangeListener" jni-type="Lcom/theartofdev/edmodo/cropper/CropOverlayView$CropWindowChangeListener;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setCropWindowLimits" jni-signature="(FFFF)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="maxWidth" type="float" jni-type="F">
+        </parameter>
+        <parameter name="maxHeight" type="float" jni-type="F">
+        </parameter>
+        <parameter name="scaleFactorWidth" type="float" jni-type="F">
+        </parameter>
+        <parameter name="scaleFactorHeight" type="float" jni-type="F">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setCropWindowRect" jni-signature="(Landroid/graphics/RectF;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="rect" type="android.graphics.RectF" jni-type="Landroid/graphics/RectF;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setFixedAspectRatio" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="fixAspectRatio" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setGuidelines" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="guidelines" type="com.theartofdev.edmodo.cropper.CropImageView.Guidelines" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$Guidelines;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setInitialAttributeValues" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageOptions;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="options" type="com.theartofdev.edmodo.cropper.CropImageOptions" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageOptions;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setInitialCropWindowRect" jni-signature="(Landroid/graphics/Rect;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="rect" type="android.graphics.Rect" jni-type="Landroid/graphics/Rect;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMaxCropResultSize" jni-signature="(II)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="maxCropResultWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="maxCropResultHeight" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMinCropResultSize" jni-signature="(II)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="minCropResultWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="minCropResultHeight" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMultiTouchEnabled" jni-signature="(Z)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="multiTouchEnabled" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSnapRadius" jni-signature="(F)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="snapRadius" type="float" jni-type="F">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="CropOverlayView.1" static="true" visibility="" jni-signature="Lcom/theartofdev/edmodo/cropper/CropOverlayView$1;"></class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="CropOverlayView.CropWindowChangeListener" static="true" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropOverlayView$CropWindowChangeListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onCropWindowChanged" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="android.view.ScaleGestureDetector.SimpleOnScaleGestureListener" extends-generic-aware="android.view.ScaleGestureDetector.SimpleOnScaleGestureListener" jni-extends="Landroid/view/ScaleGestureDetector$SimpleOnScaleGestureListener;" final="false" name="CropOverlayView.ScaleListener" static="false" visibility="private" jni-signature="Lcom/theartofdev/edmodo/cropper/CropOverlayView$ScaleListener;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="CropWindowHandler" static="false" visibility="" jni-signature="Lcom/theartofdev/edmodo/cropper/CropWindowHandler;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMaxCropHeight" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMaxCropWidth" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMinCropHeight" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMinCropWidth" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMoveHandler" jni-signature="(FFFLcom/theartofdev/edmodo/cropper/CropImageView$CropShape;)Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler;" bridge="false" native="false" return="java.lang.Object" jni-return="Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="x" type="float" jni-type="F">
+        </parameter>
+        <parameter name="y" type="float" jni-type="F">
+        </parameter>
+        <parameter name="targetRadius" type="float" jni-type="F">
+        </parameter>
+        <parameter name="cropShape" type="com.theartofdev.edmodo.cropper.CropImageView.CropShape" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageView$CropShape;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getRect" jni-signature="()Landroid/graphics/RectF;" bridge="false" native="false" return="android.graphics.RectF" jni-return="Landroid/graphics/RectF;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getScaleFactorHeight" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getScaleFactorWidth" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setCropWindowLimits" jni-signature="(FFFF)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="maxWidth" type="float" jni-type="F">
+        </parameter>
+        <parameter name="maxHeight" type="float" jni-type="F">
+        </parameter>
+        <parameter name="scaleFactorWidth" type="float" jni-type="F">
+        </parameter>
+        <parameter name="scaleFactorHeight" type="float" jni-type="F">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setInitialAttributeValues" jni-signature="(Lcom/theartofdev/edmodo/cropper/CropImageOptions;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="options" type="com.theartofdev.edmodo.cropper.CropImageOptions" jni-type="Lcom/theartofdev/edmodo/cropper/CropImageOptions;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMaxCropResultSize" jni-signature="(II)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="maxCropResultWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="maxCropResultHeight" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMinCropResultSize" jni-signature="(II)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="minCropResultWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="minCropResultHeight" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setRect" jni-signature="(Landroid/graphics/RectF;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="rect" type="android.graphics.RectF" jni-type="Landroid/graphics/RectF;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="showGuidelines" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="CropWindowMoveHandler" static="false" visibility="" jni-signature="Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="move" jni-signature="(Landroid/graphics/RectF;FFLandroid/graphics/RectF;IIFZF)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="rect" type="android.graphics.RectF" jni-type="Landroid/graphics/RectF;">
+        </parameter>
+        <parameter name="x" type="float" jni-type="F">
+        </parameter>
+        <parameter name="y" type="float" jni-type="F">
+        </parameter>
+        <parameter name="bounds" type="android.graphics.RectF" jni-type="Landroid/graphics/RectF;">
+        </parameter>
+        <parameter name="viewWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="viewHeight" type="int" jni-type="I">
+        </parameter>
+        <parameter name="snapMargin" type="float" jni-type="F">
+        </parameter>
+        <parameter name="fixedAspectRatio" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="aspectRatio" type="float" jni-type="F">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="CropWindowMoveHandler.1" static="true" visibility="" jni-signature="Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler$1;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="CropWindowMoveHandler.Type" static="true" visibility="public" jni-signature="Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler$Type;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler$Type;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" jni-return="Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler$Type;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler$Type;" bridge="false" native="false" return="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type[]" jni-return="[Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler$Type;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="BOTTOM" jni-signature="Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler$Type;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" type-generic-aware="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="BOTTOM_LEFT" jni-signature="Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler$Type;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" type-generic-aware="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="BOTTOM_RIGHT" jni-signature="Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler$Type;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" type-generic-aware="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="CENTER" jni-signature="Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler$Type;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" type-generic-aware="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="LEFT" jni-signature="Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler$Type;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" type-generic-aware="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="RIGHT" jni-signature="Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler$Type;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" type-generic-aware="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="TOP" jni-signature="Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler$Type;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" type-generic-aware="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="TOP_LEFT" jni-signature="Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler$Type;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" type-generic-aware="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="TOP_RIGHT" jni-signature="Lcom/theartofdev/edmodo/cropper/CropWindowMoveHandler$Type;" static="true" transient="false" type="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" type-generic-aware="com.theartofdev.edmodo.cropper.CropWindowMoveHandler.Type" visibility="public" volatile="false">
+      </field>
+    </class>
+  </package>
+</api>

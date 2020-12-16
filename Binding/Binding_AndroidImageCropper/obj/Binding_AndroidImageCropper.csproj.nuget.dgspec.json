@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Kyle_\\Documents\\projects\\ImageCropper\\ImageCropper.Forms\\Binding\\Binding_AndroidImageCropper\\Binding_AndroidImageCropper.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Kyle_\\Documents\\projects\\ImageCropper\\ImageCropper.Forms\\Binding\\Binding_AndroidImageCropper\\Binding_AndroidImageCropper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kyle_\\Documents\\projects\\ImageCropper\\ImageCropper.Forms\\Binding\\Binding_AndroidImageCropper\\Binding_AndroidImageCropper.csproj",
+        "projectName": "Binding_AndroidImageCropper",
+        "projectPath": "C:\\Users\\Kyle_\\Documents\\projects\\ImageCropper\\ImageCropper.Forms\\Binding\\Binding_AndroidImageCropper\\Binding_AndroidImageCropper.csproj",
+        "packagesPath": "C:\\Users\\Kyle_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kyle_\\Documents\\projects\\ImageCropper\\ImageCropper.Forms\\Binding\\Binding_AndroidImageCropper\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Kyle_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Xamarin.Android.Support.Exif": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.Media.Compat": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v7.AppCompat": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
