@@ -3,7 +3,15 @@ Refer to Stormlion's Reop and Nuget package for future updates.
 
 This package includes iOS10. If there are build issues with iOS 10 please refer to the original repo or submit a PR/issue. 
 
-Changes include: updating to Xamarian.Android.28.0.03 and changing package management to a reference style
+### Changes include
+
+- updating to Xamarian.Android.28.0.03 and changing package management to a reference style
+- Throw some exceptions rather then just silently fail/crash 
+- Corrected and update the iOS and Android demos
+- Tested on iOS 14.3 
+- Await/async added for iOS and Android
+
+Future Ideas: support for UWP, add more errors/exception handling, ability to cleanup cache files
 
 # ImageCropper.Forms
 
