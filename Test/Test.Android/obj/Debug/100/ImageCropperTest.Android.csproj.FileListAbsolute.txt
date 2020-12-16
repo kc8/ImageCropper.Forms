@@ -1,4 +1,0 @@
-C:\Users\Kyle_\Documents\projects\ImageCropper\ImageCropper.Forms\Test\Test.Android\obj\Debug\100\MonoAndroid,Version=v10.0.AssemblyAttributes.cs
-C:\Users\Kyle_\Documents\projects\ImageCropper\ImageCropper.Forms\Test\Test.Android\obj\Debug\100\build.props
-C:\Users\Kyle_\Documents\projects\ImageCropper\ImageCropper.Forms\Test\Test.Android\obj\Debug\100\adb.props
-C:\Users\Kyle_\Documents\projects\ImageCropper\ImageCropper.Forms\Test\Test.Android\obj\Debug\100\ImageCropperTest.Android.csprojAssemblyReference.cache

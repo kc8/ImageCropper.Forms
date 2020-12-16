@@ -119,7 +119,7 @@ namespace Stormlion.ImageCropper
             DependencyService.Get<IImageCropperWrapper>().ShowFromFile(this, imageFile); 
         
             // dispose media file
-            file?.Dispose(); 
+            //file?.Dispose(); 
             this.CleanUp();
         }
 

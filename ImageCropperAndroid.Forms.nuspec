@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>ImageCropper.Android28.Forms</id>
-    <version>0.2.7.05</version>
+      <id>ImageCropperAndroidx.Forms</id>
+    <version>0.2.7.06</version>
     <authors>Marko Rothstein</authors>
     <owners>Marko Rothstein</owners>
     <projectUrl>https://github.com/kc8/ImageCropper.Forms</projectUrl>
